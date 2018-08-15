@@ -132,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
         thread.start();
 
 //      parsing weather data online by JSON
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city.getText().toString() + "&appid=54b0ff6a15e410011d01ad275021ba6f&units=Imperial";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city.getText().toString() + 
+            "&appid="API here"+&units=Imperial";
 
         final JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener <JSONObject>() {
